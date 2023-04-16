@@ -1,0 +1,195 @@
+/*
+blue: #3a8cb7;
+red: #bb534e;
+green: #8eac56
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: .5rem;
+  width: fit-content;
+  padding:1.5rem;
+  margin: .5rem;
+  text-align: center;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  min-width: 60vw;
+}
+
+html{
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+}
+
+.submit-btn {
+  background-color: #3a8cb7;
+  color: white;
+  border-radius: .25rem;
+  border: none;
+  padding: .35rem .4rem;
+}
+
+.submit-btn:hover {
+  background-color: #2181b5;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 5px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.todo-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+  gap: 2rem;
+}
+
+.todo-lists__pending-container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  min-width: 29vw;
+}
+.todo-lists__complete-container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  min-width: 29vw;
+}
+
+.todo-lists__pending-container h3 {
+  align-self: start;
+  padding: .5rem 0 0 .5rem;
+}
+.todo-lists__complete-container h3 {
+  align-self: start;
+  padding: .5rem 0 0 .5rem;
+}
+
+.todo-lists__pending{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap:10px;
+  max-width: 30rem;
+  background-color: #f0f0f0;
+  border-radius: .5rem;
+  padding: 1rem .5rem;
+  min-width: 40%;
+}
+
+.todo-lists__complete {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap:10px;
+  max-width: 30rem;
+  background-color: #f0f0f0;
+  border-radius: .5rem;
+  padding: 1rem .5rem;
+}
+
+.todo-lists__pending li{
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e2d4;
+  padding: .5rem;
+  border-radius: .2rem;
+  gap: .25rem;
+}
+.todo-lists__pending li span{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.todo-lists__pending li i{
+  padding: 0px 5px;
+}
+.todo-lists__pending li i:hover{
+  cursor: pointer;
+}
+.todo-lists__complete li{
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e2d4;
+  padding: .5rem;
+  border-radius: .2rem;
+  gap: .25rem;
+}
+.todo-lists__complete li span{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.todo-lists__complete li i{
+  padding: 0 .25rem;
+}
+.todo-lists__complete li i:hover{
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #3a8cb7;
+  color: white;
+  padding: .1rem;
+  border-radius: .2rem;
+}
+
+.edit:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.delete {
+  background-color: #bb534e;
+  padding: .1rem;
+  border-radius: .2rem;
+
+}
+
+.delete:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.complete {
+  background-color: #8eac56;
+  padding: .1rem;
+  border-radius: .2rem;
+}
+
+.complete:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: .5rem;
+  padding: .5rem;
+  border-style: solid;
+}

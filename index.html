@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/5492a21c72.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="app">
+            <h1>TodoList</h1>
+            <div class="form">
+                <input class="input" placeholder="Insert task here..."/><button class="submit-btn">
+                    submit
+                </button>
+            </div>
+            <div class="todo-lists">
+                <div class="todo-lists__pending-container">
+                    <h3>Pending Tasks</h3>
+                    <ul class="todo-lists__pending"></ul>
+                </div>
+                <div class="todo-lists__complete-container">
+                    <h3>Completed Tasks</h3>
+                    <ul class="todo-lists__complete"><li>complete</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <i></i>
+        </div>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

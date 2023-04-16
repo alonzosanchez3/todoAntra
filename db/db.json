@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "content": "Hey",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "content": "more stuff",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "content": "random stuff",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "content": "completed task",
+      "completed": true,
+      "id": 4
+    }
+  ]
+}
